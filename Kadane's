@@ -1,17 +1,15 @@
 # Kadane's Algorithm finds the contiguous sub-array, within an array of integers, which has the largest sum.
-# a=[-1,2,4,-3,5,2,-5,2]
-# b=a.copy()
-# len=len(a)
-# max_sum=0
-# for i in range(len):
-#     sum=a[i]
-#     for j in range(i+1,len):
-#         sum+=a[j]
-#         if sum>max_sum:
-#             max_sum=sum
-# print(max_sum)
-# Function to find contiguous sublist with the largest sum
-# in given set of integers
+# Initialize:
+#     maxSoFar = 0
+#     maxEndingHere = 0
+# 
+# Loop for each element of the array
+#   (a) maxEndingHere = maxEndingHere + a[i]
+#   (b) if(maxSoFar < maxEndingHere)
+#             maxSoFar = maxEndingHere
+#   (c) if(maxEndingHere < 0)
+#             maxEndingHere = 0
+# return maxSoFar
 def kadane(A):
     # stores maximum sum sublist found so far
     maxSoFar = 0
