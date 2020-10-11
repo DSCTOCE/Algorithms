@@ -16,5 +16,6 @@ bool strings(str string,int s,int e)
   if (string[s]!=string[e]) return false;
   else{
     return strings(string,s+1,e-1);
+ 
   }
 }
