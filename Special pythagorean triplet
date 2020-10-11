@@ -1,0 +1,11 @@
+n=int(input("num=")
+for i in range(1,n):
+  A=i*i
+  for j in range(2,n):
+    B=j*j
+    for k in range(3,n):
+      C=k*k
+      if A+B==c and i+j+k==n:
+        mul=i*j*k
+        break
+print(mul)
