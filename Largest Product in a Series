@@ -1,3 +1,15 @@
+#Calculating the Largest Product in a Series.
+# convert the string into an array a
+# Initialize hprod and j to 0
+# for _ in a
+# Initialize prod to 1
+# if k>len(a)-1 then break
+# prod = prod * a[k]
+# exit from if
+# if prod > hprod then hprod=prod
+# exit from it
+# increment j by 1
+
 def highestprod(n):
     a = []
     hprod = 0
