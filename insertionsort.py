@@ -34,6 +34,8 @@ int holePosition
 	
 end procedure
 """
+
+
 #Algorithm
 def insertion_sort(InputList):
     for i in range(1, len(InputList)):
@@ -50,9 +52,9 @@ num= int(input("Enter number of elements"))
 
 print(f'Enter {num} elements')
 
- for i in range(num):
+for i in range(num):
       data = int(input(f'{i+1}. '))
       unsorted_list.append(data)
-print(f 'Unsorted list is{unsorted_list}')
+print(f'Unsorted list is{unsorted_list}')
 insertion_sort(list)
 print(f'Sorted list is {merge_sort(unsorted_list)}')
