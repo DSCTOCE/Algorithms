@@ -1,0 +1,16 @@
+n=int(input("Num= "))
+def prime(n):
+    Sum=0
+    for i in range(1,n+1):
+        if n%i==0:
+            Sum+=1
+    if Sum==2:
+        return True
+    else:
+        return False
+print(prime(n))
+tot=0
+for p in range(n):
+    if prime(p):
+        tot+=p
+print(tot)
