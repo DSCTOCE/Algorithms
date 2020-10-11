@@ -50,10 +50,10 @@ def shellSort(input_list):
     
     gap = len(input_list) // 2
     while gap > 0:
-
         for i in range(gap, len(input_list)):
             temp = input_list[i]
             j = i
+
 # Sort the sub list for this gap
 
             while j >= gap and input_list[j - gap] > temp:
@@ -72,5 +72,4 @@ for i in range(num):
       data = int(input(f'{i+1}. '))
       unsorted_list.append(data)
 print(f 'Unsorted list is{unsorted_list}')
-insertion_sort(list)
 print(f'Sorted list is {shellSort(unsorted_list)}')
