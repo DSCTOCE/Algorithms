@@ -1,0 +1,47 @@
+## Problem Statement
+
+Write a Java program to compute the number of spaces and characters in a given string
+
+### Condition
+
+Ignore all the digits
+
+## Input
+
+    Hello This is ABCD from XYZ city
+
+## Output
+
+    No of spaces : 6 and characters : 26
+
+## Explanation
+
+> The total number of spaces and all the characters excluding numbers/digits are computed and printed.
+
+
+
+## SOLUTION
+-------------
+-------------
+
+
+
+import java.util.Scanner;
+class Solution{
+    public static void main(String[] args){
+        int space_count=0,char_count=0;
+        Scanner s=new Scanner(System.in);
+        String input=s.nextLine();
+        s.close();
+        char[] result = input.toCharArray();
+        for(int i=0;i<result.length;i++){
+            if(Character.isWhitespace(result[i])){
+                space_count++;
+            }
+            else if(!Character.isDigit(result[i])){
+                char_count++;
+            }
+        }
+        System.out.println("No of spaces : " +space_count +" and characters : " +char_count);
+    }
+}
